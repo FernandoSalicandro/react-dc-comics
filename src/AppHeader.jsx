@@ -1,13 +1,12 @@
 
-import './App.css'
 
-function App() {
 
+function headerApp() {
 
   return (
     <>
       <header>
-        <div className="navBar flex justify-around align-center">
+        <div className="container navBar flex justify-around align-center">
           <div className="navCol">
             <img src="/dc-logo.png" alt="Logo Dc" className='headerLogo' />
           </div>
@@ -32,4 +31,4 @@ function App() {
   )
 }
 
-export default App
+export default headerApp

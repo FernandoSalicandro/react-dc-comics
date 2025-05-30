@@ -1,52 +1,68 @@
-
 :root {
-    --primary-color : rgba(12,124,236,255);
+    --primary-color: rgba(12, 124, 236, 255);
+    --footer-color : rgba(48,48,48,255);
 }
+
 * {
-    padding: 0; 
+    padding: 0;
     margin: 0;
-    box-sizing : border-box;
-    font-family: sans-serif;
+    box-sizing: border-box;
     color: black;
+    font-family:"Open Sans", sans-serif;
 }
 
 img {
     max-width: 100%;
 }
 
+
+
 .container {
-    width : 80% ;
-    max-width : 1250px;
-    margin : 0 auto;
-    /* debug */
-    border: 1px solid red;
+    width: 80%;
+    max-width: 1250px;
+    margin: 0 auto;
 
 }
 
 
-li{
+li {
     list-style: none;
 }
 
 .flex {
     display: flex;
-   
+
 }
 
 .justify-around {
-justify-content: space-around;
+    justify-content: space-around;
+}
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
 }
 
 .align-center {
     align-items: center;
 }
 
+.py1 {
+    padding-top: 10px;
+}
+
+.g1 {
+    gap:1rem;
+}
 .navBar {
     width: 100%;
 }
+
 .navUl {
     display: flex;
-    gap : 1rem;
+    gap: 1rem;
 
 }
 
@@ -59,31 +75,126 @@ header {
     display: flex;
     height: 100px;
 }
-.headerLogo{
-   max-width: 60%;
-   aspect-ratio: 1;
+
+.headerLogo {
+    max-width: 60%;
+    aspect-ratio: 1;
 }
 
 .pageOff {
+    display: flex;
+    align-items: center;
+    height: 82px;
+    border-bottom: 7px solid rgba(255, 255, 255, 0) ;
 
-  display: flex;
-  align-items: center;
-    height: 80px;
-  
-  
+
 }
 
 
 .activePage {
+font-weight: 800;
+    display: flex;
+    align-items: center;
+    height: 82px;
+    border-bottom: 7px solid var(--primary-color);
 
-  display: flex;
-  align-items: center;
-    height: 80px;
-    border-bottom: 1px solid var(--primary-color);
-  
-  
+
 }
 
 .primaryColor {
     color: var(--primary-color);
+}
+
+.mainRow {
+    height: 100px;
+    color: white;
+    background-color: black;
+    align-items: center;
+}
+.mainRow h3 {
+    color: white;
+}
+
+.callToAction {
+    height: 100px;
+    color: white;
+    background-color: var(--primary-color);
+    align-items: center;
+}
+.ctaUl {
+    
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.ctaUl img {
+    width: 50px;
+}
+
+.ctaUl li h3 {
+    font-weight: 500;
+    font-size: 1rem;
+    align-self: center;
+    color: white;
+}
+
+.footer {
+   
+    height: 345px;
+    background-position-y: 50% ;
+    background-position-x: 80%;
+    background-repeat: no-repeat;
+    background-image: url(../public/dc-logo-bg.png);
+    padding-top: 20px;
+    
+}
+.footerCol {
+    display: flex;
+    gap: 3rem;
+}
+
+.footerNavCol ul, .footerNavCol h3 {
+    padding-top: 10px;
+}
+.footerNavCol h3 {
+    color:white
+}
+
+.footerNavCol a {
+    line-height: 1.5rem;
+    text-decoration: none;
+    color: grey;
+}
+
+.bgFooter {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../public/footer-bg.jpg);
+}
+
+.footerBottom {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: var(--footer-color);
+}
+
+.footerBottomCol {
+    align-self: center;
+}
+
+.followLink {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.ctaLink {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid var(--primary-color);
 }
