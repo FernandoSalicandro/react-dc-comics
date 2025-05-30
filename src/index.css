@@ -1,0 +1,89 @@
+
+:root {
+    --primary-color : rgba(12,124,236,255);
+}
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing : border-box;
+    font-family: sans-serif;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width : 80% ;
+    max-width : 1250px;
+    margin : 0 auto;
+    /* debug */
+    border: 1px solid red;
+
+}
+
+
+li{
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+   
+}
+
+.justify-around {
+justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.navBar {
+    width: 100%;
+}
+.navUl {
+    display: flex;
+    gap : 1rem;
+
+}
+
+.navUl a {
+    text-decoration: none;
+}
+
+header {
+    padding-top: 20px;
+    display: flex;
+    height: 100px;
+}
+.headerLogo{
+   max-width: 60%;
+   aspect-ratio: 1;
+}
+
+.pageOff {
+
+  display: flex;
+  align-items: center;
+    height: 80px;
+  
+  
+}
+
+
+.activePage {
+
+  display: flex;
+  align-items: center;
+    height: 80px;
+    border-bottom: 1px solid var(--primary-color);
+  
+  
+}
+
+.primaryColor {
+    color: var(--primary-color);
+}
