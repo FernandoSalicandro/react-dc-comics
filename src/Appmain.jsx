@@ -1,9 +1,23 @@
+import comics from "./comics.js"
+
+const printComics = () => {
+    return (
+        comics.map(curComic => 
+            <div className="card">
+                <div className="thumb"><img src={curComic.thumb} alt={curComic.title} /></div>
+              
+              <p className="comic-title">{curComic.title}</p>
+            </div>
+        )
+    );
+}
+
 function mainApp() {
     return (
         <>
-            <div className="mainRow flex">
-                <div className="container">
-                    <h3>---Content goes here---</h3>
+            <div className="mainRow py1 flex align-center justify-center ">
+                <div className="container flex align-center justify-around  wrap">
+                   {printComics()}
                 </div>
             </div>
             <div className="callToAction flex">
