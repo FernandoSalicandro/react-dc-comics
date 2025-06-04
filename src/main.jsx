@@ -1,16 +1,17 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import HeaderApp from './AppHeader.jsx'
-import JumboApp from  "./Jumbo.jsx"
-import AppMain from './Appmain.jsx'
-import AppFooter from './AppFooter.jsx'
+import AppHeader from "../Components/AppHeader.jsx"
+import AppJumbo from "../Components/AppJumbo.jsx"
+import AppMain from  "../Components/AppMain.jsx"
+import AppFooter from "../Components/AppFooter.jsx"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HeaderApp />
-    <JumboApp />
+    <AppHeader />
+    <AppJumbo />
     <AppMain />
     <AppFooter />
+
   </StrictMode>,
 )
