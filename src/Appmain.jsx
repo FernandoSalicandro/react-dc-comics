@@ -1,12 +1,11 @@
 import comics from "./comics.js"
+import AppCard from "./AppCard.jsx";
 
 const printComics = () => {
     return (
-        comics.map(curComic => 
-            <div className="card">
-                <div className="thumb"><img src={curComic.thumb} alt={curComic.title} /></div>
-              
-              <p className="comic-title">{curComic.title}</p>
+        comics.map((curComic, index) =>
+            <div key={index} className="card">
+                <AppCard title={curComic.title} thumb={curComic.thumb} />
             </div>
         )
     );
@@ -17,7 +16,7 @@ function mainApp() {
         <>
             <div className="mainRow py1 flex align-center justify-center ">
                 <div className="container flex align-center justify-around  wrap">
-                   {printComics()}
+                    {printComics()}
                 </div>
             </div>
             <div className="callToAction flex">

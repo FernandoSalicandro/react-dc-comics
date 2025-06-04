@@ -152,7 +152,7 @@ font-weight: 800;
     background-position-y: 50% ;
     background-position-x: 80%;
     background-repeat: no-repeat;
-    background-image: url(../public/dc-logo-bg.png);
+    background-image: url(../dc-logo-bg.png);
     padding-top: 20px;
     
 }
@@ -177,7 +177,7 @@ font-weight: 800;
 .bgFooter {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../public/footer-bg.jpg);
+    background-image: url(../footer-bg.jpg);
 }
 
 .footerBottom {
@@ -208,9 +208,9 @@ font-weight: 800;
 
 
 .jumbo {
-    height: 200px;
+    height: 320px;
     background-size:100% ;
-    background-image: url(../public/jumbotron.jpg);
+    background-image: url(../jumbotron.jpg);
 }
 
 .card {
